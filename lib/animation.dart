@@ -76,7 +76,9 @@ class _ListbuttState extends State<Listbutt>
                 Expanded(child: Image.asset('assets/images/sun.png')),
                 const SizedBox(width: 10),
                 OutlinedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/two');
+                  },
                   child: const Text('подробнее'),
                 )
               ],

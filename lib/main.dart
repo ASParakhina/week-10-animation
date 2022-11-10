@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:week_10_animation/%20smooth_appearance.dart';
 import 'package:week_10_animation/animation.dart';
 import 'package:week_10_animation/butterflie.dart';
 
@@ -26,8 +27,9 @@ class MyApp extends StatelessWidget {
         //         },
         //         child: const Text("жамкай"))),
         routes: {
+          '/': (context) => const Listbutt(),
           '/one': (context) => ButterfliesWidget(),
-          '/': (context) => const Listbutt()
+          '/two': (context) => const Smooth(),
         });
   }
 }
