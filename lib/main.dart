@@ -18,21 +18,16 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.amber,
         ),
-        home: Scaffold(
-          appBar: AppBar(),
-        ),
+        // // home: Scaffold(
+        // //     appBar: AppBar(),
+        // //     body: ElevatedButton(
+        // //         onPressed: () {
+        // //           Navigator.pushNamed(context, '/one');
+        //         },
+        //         child: const Text("жамкай"))),
         routes: {
-          '/': (context) => const Listbutt(),
-          '/one': (context) => ButterfliesWidget()
+          '/one': (context) => ButterfliesWidget(),
+          '/': (context) => const Listbutt()
         });
-  }
-}
-
-class MyWidget extends StatelessWidget {
-  const MyWidget({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container();
   }
 }

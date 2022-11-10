@@ -31,55 +31,58 @@ class _ListbuttState extends State<Listbutt>
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        children: [
-          Row(
-            children: [
-              const SizedBox(width: 70),
-              AnimatedBuilder(
-                animation: _controller.view,
-                builder: (context, child) {
-                  return Transform.rotate(
-                      angle: _controller.value * 2 * pi, child: child);
-                },
-                child: SizedBox(
-                    height: 300,
-                    width: 200,
-                    child: Image.asset('assets/images/batt.jpg')),
-              ),
-            ],
-          ),
-          const SizedBox(height: 40),
-          Row(
-            children: [
-              Expanded(
-                child: Hero(
-                    tag: 'kapusta',
-                    child: Image.asset('assets/images/kapustnitza.jpg')),
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-              OutlinedButton(
-                onPressed: () {
-                  Navigator.pushNamed(context, '/one');
-                },
-                child: const Text('подробнее'),
-              )
-            ],
-          ),
-          Row(
-            children: [
-              Expanded(child: Image.asset('assets/images/sun.png')),
-              const SizedBox(width: 10),
-              OutlinedButton(
-                onPressed: () {},
-                child: const Text('подробнее'),
-              )
-            ],
-          ),
-        ],
+    return Scaffold(
+      appBar: AppBar(),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Row(
+              children: [
+                const SizedBox(width: 70),
+                AnimatedBuilder(
+                  animation: _controller.view,
+                  builder: (context, child) {
+                    return Transform.rotate(
+                        angle: _controller.value * 2 * pi, child: child);
+                  },
+                  child: SizedBox(
+                      height: 300,
+                      width: 200,
+                      child: Image.asset('assets/images/batt.jpg')),
+                ),
+              ],
+            ),
+            const SizedBox(height: 40),
+            Row(
+              children: [
+                Expanded(
+                  child: Hero(
+                      tag: 'kapusta',
+                      child: Image.asset('assets/images/kapustnitza.jpg')),
+                ),
+                const SizedBox(
+                  width: 10,
+                ),
+                OutlinedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/one');
+                  },
+                  child: const Text('подробнее'),
+                )
+              ],
+            ),
+            Row(
+              children: [
+                Expanded(child: Image.asset('assets/images/sun.png')),
+                const SizedBox(width: 10),
+                OutlinedButton(
+                  onPressed: () {},
+                  child: const Text('подробнее'),
+                )
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
