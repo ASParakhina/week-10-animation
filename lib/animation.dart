@@ -52,10 +52,11 @@ class _ListbuttState extends State<Listbutt>
                 ),
               ],
             ),
-            const SizedBox(height: 40),
+            const SizedBox(height: 50),
             Row(
               children: [
-                Expanded(
+                SizedBox(
+                  width: 200,
                   child: Hero(
                       tag: 'kapusta',
                       child: Image.asset('assets/images/kapustnitza.jpg')),
@@ -67,19 +68,35 @@ class _ListbuttState extends State<Listbutt>
                   onPressed: () {
                     Navigator.pushNamed(context, '/one');
                   },
-                  child: const Text('подробнее'),
+                  child: const Text('Heroanimation'),
                 )
               ],
             ),
+            const SizedBox(height: 50),
             Row(
               children: [
-                Expanded(child: Image.asset('assets/images/sun.png')),
+                Expanded(child: Image.asset('assets/images/machaon.jpeg')),
                 const SizedBox(width: 10),
                 OutlinedButton(
                   onPressed: () {
-                    Navigator.pushNamed(context, '/two');
+                    Navigator.pushNamed(context, '/three');
                   },
-                  child: const Text('подробнее'),
+                  child: const Text('плавное появление'),
+                )
+              ],
+            ),
+            const SizedBox(height: 50),
+            Row(
+              children: [
+                SizedBox(
+                    width: 200,
+                    child: Image.asset('assets/images/admiral.jpeg')),
+                const SizedBox(width: 10),
+                OutlinedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/three');
+                  },
+                  child: const Text('список'),
                 )
               ],
             ),

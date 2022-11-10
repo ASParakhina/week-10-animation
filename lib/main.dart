@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:week_10_animation/dropdown.dart';
 import ' smooth_appearance.dart';
 import 'package:week_10_animation/animation.dart';
 import 'package:week_10_animation/butterflie.dart';
@@ -28,8 +29,9 @@ class MyApp extends StatelessWidget {
         //         child: const Text("жамкай"))),
         routes: {
           '/': (context) => const Listbutt(),
-          '/one': (context) => ButterfliesWidget(),
+          '/one': (context) => const ButterfliesWidget(),
           '/two': (context) => const Smooth(),
+          '/three': (context) => const Drop(),
         });
   }
 }

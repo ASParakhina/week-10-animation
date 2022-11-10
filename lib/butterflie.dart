@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class ButterfliesWidget extends StatelessWidget {
+  const ButterfliesWidget({super.key});
+
   // final int buttid;
 
   // const ButterfliesWidget({Key? key, required this.buttid}) : super(key: key);
