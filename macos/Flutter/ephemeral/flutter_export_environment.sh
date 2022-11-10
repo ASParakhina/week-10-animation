@@ -1,7 +1,7 @@
 #!/bin/sh
 # This is a generated file; do not edit or check into version control.
-export "FLUTTER_ROOT=/Users/alyona/Documents/ITGIRLS/flutter"
-export "FLUTTER_APPLICATION_PATH=/Users/alyona/Documents/ITGIRLS/StudioProjects/week 10 /week_10_animation"
+export "FLUTTER_ROOT=/Users/alenaparahina/Documents/ITGIRLS/flutter"
+export "FLUTTER_APPLICATION_PATH=/Users/alenaparahina/Documents/week-10-animation"
 export "COCOAPODS_PARALLEL_CODE_SIGN=true"
 export "FLUTTER_BUILD_DIR=build"
 export "FLUTTER_BUILD_NAME=1.0.0"

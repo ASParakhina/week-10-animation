@@ -17,7 +17,7 @@ class _ListbuttState extends State<Listbutt>
   void initState() {
     _controller = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 2),
+      duration: const Duration(seconds: 2),
     );
     _controller.repeat();
     super.initState();
@@ -43,7 +43,7 @@ class _ListbuttState extends State<Listbutt>
                   return Transform.rotate(
                       angle: _controller.value * 2 * pi, child: child);
                 },
-                child: Container(
+                child: SizedBox(
                     height: 300,
                     width: 200,
                     child: Image.asset('assets/images/batt.jpg')),
