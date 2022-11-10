@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:week_10_animation/%20smooth_appearance.dart';
+import ' smooth_appearance.dart';
 import 'package:week_10_animation/animation.dart';
 import 'package:week_10_animation/butterflie.dart';
 
